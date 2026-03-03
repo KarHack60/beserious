@@ -230,6 +230,12 @@ p {
   overflow: hidden;
 }
 
+.hero-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -968,3 +974,4 @@ textarea {
   }
 
 }
+
