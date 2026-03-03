@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Beserious – Premium Dark-Themed Landing Page
+    ------------------------------------------------
+    Deployment (GitHub Pages):
+    1. Place index.html, style.css, and script.js in the root of your GitHub repo.
+    2. Push to GitHub.
+    3. Enable GitHub Pages in Settings → Pages → "Deploy from a branch" (main/root).
+    4. Site will be live at your GitHub Pages URL.
+
+    Contact Form Setup (Formspree – Recommended):
+    1. Go to https://formspree.io and create a new form.
+    2. Copy your form endpoint (looks like: https://formspree.io/f/abcdwxyz).
+    3. Replace the placeholder URL in the <form> action attribute in the Contact section.
+    4. Submissions will be sent to the email you configure on Formspree.
+
+    Optional (EmailJS instead of Formspree):
+    - See comments near the bottom of this file and in script.js for how to plug in
+      your EmailJS public key, service ID, and template ID if you prefer JS-based email.
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beserious – Be Serious About Growth.</title>
+  <meta name="description" content="Beserious is an early-stage growth agency engineering data-driven digital systems for measurable scale. Be serious about growth.">
+
+  <!-- Basic SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#020308">
+
+  <!-- Favicon placeholder (replace with your own .ico/.png) -->
+  <!-- Example: <link rel="icon" type="image/png" href="assets/favicon.png"> -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' ry='14' fill='%23060b16'/%3E%3Cpath d='M18 46V18h14c5.5 0 9 3.3 9 8 0 3.4-2 6-5 7.2L43 46h-6.4l-6.4-11.8H24V46h-6zM24 23v7h8c2.6 0 4-1.6 4-3.6 0-2.2-1.5-3.4-4-3.4h-8z' fill='%23ffffff'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- =========================
+       Sticky Navbar
+  ========================== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#top" class="brand">
+        <span class="brand-icon" aria-hidden="true">B</span>
+        <span class="sr-only">Beserious</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#why">Why Beserious</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Start Scaling</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- =========================
+         Hero Section
+    ========================== -->
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-bg">
+        <div class="hero-orbit orbit-1"></div>
+        <div class="hero-orbit orbit-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-content fade-in">
+          <p class="eyebrow">Growth Engineering Studio</p>
+          <h1 id="hero-title">Engineering Exponential Growth.</h1>
+          <p class="hero-subtext">
+            We design data-driven digital systems built for measurable scale.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Start Your Growth Build</a>
+            <a href="#services" class="btn btn-ghost">Explore Services</a>
+          </div>
+
+          <p class="hero-note">
+            Now onboarding our first growth partners.
+          </p>
+        </div>
+
+        <div class="hero-visual fade-in delay-1">
+          <div class="hero-card">
+            <div class="hero-symbol">
+              <span class="symbol-b">B</span>
+              <span class="symbol-arrow"></span>
+            </div>
+            <div class="hero-metric">
+              <span class="label">Mindset</span>
+              <span class="value">Be Serious About Growth.</span>
+            </div>
+            <div class="hero-meta">
+              <span>Early-stage growth agency</span>
+              <span>Digital · Product · AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Services
+    ========================== -->
+    <section id="services" class="section services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header fade-in">
+          <h2 id="services-title">Services Built For Scale</h2>
+          <p>
+            Product, brand, and growth capabilities assembled for ambitious teams ready to move from ideas to engineered outcomes.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card fade-in">
+            <div class="icon-circle">
+              <span class="icon">⌘</span>
+            </div>
+            <h3>Website Design &amp; Development</h3>
+            <p>High-conversion, fast, and responsive websites crafted to position your brand with clarity and intent.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card fade-in delay-1">
+            <div class="icon-circle">
+              <span class="icon">▢</span>
+            </div>
+            <h3>App Design &amp; Development</h3>
+            <p>From UX flows to production-ready interfaces, we design applications that feel sharp, intuitive, and trustworthy.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card fade-in delay-2">
+            <div class="icon-circle">
+              <span class="icon">⚡</span>
+            </div>
+            <h3>AI Integration &amp; Automation</h3>
+            <p>Embed AI into your workflows to automate the repetitive, unlock insights, and move faster with confidence.</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card fade-in">
+            <div class="icon-circle">
+              <span class="icon">⇢</span>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Systematic acquisition strategies focused on experimentation, learning loops, and measurable return.</p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card fade-in delay-1">
+            <div class="icon-circle">
+              <span class="icon">✧</span>
+            </div>
+            <h3>Graphic Design</h3>
+            <p>Identity, visuals, and storytelling that make your brand feel premium and distinct in every interaction.</p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card fade-in delay-2">
+            <div class="icon-circle">
+              <span class="icon">△</span>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Technical and on-page foundations that help you get discovered, stay relevant, and compound organic reach.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Our Approach
+    ========================== -->
+    <section id="approach" class="section approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-header fade-in">
+          <h2 id="approach-title">How We Engineer Growth</h2>
+          <p>
+            A clear, systems-first process designed to move from insights to implementation without losing strategic intent.
+          </p>
+        </header>
+
+        <div class="approach-steps">
+          <article class="approach-step fade-in">
+            <div class="step-number">01</div>
+            <h3>Research &amp; Strategy Architecture</h3>
+            <p>We map your current reality, define growth hypotheses, and architect a roadmap aligned with your constraints.</p>
+          </article>
+
+          <article class="approach-step fade-in delay-1">
+            <div class="step-number">02</div>
+            <h3>Build &amp; Deploy</h3>
+            <p>We design, prototype, and ship digital experiences and systems with a focus on reliability and speed.</p>
+          </article>
+
+          <article class="approach-step fade-in delay-2">
+            <div class="step-number">03</div>
+            <h3>Automation &amp; Optimization</h3>
+            <p>We integrate automation, refine funnels, and continuously remove friction from your growth engine.</p>
+          </article>
+
+          <article class="approach-step fade-in delay-3">
+            <div class="step-number">04</div>
+            <h3>Scale &amp; Performance Monitoring</h3>
+            <p>We track the right metrics, surface insights, and iterate so your systems stay sharp as you scale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Why Beserious
+    ========================== -->
+    <section id="why" class="section why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-header fade-in">
+          <h2 id="why-title">Why Beserious</h2>
+          <p>
+            Not a generic agency. A focused partner obsessed with the details that compound into long-term advantage.
+          </p>
+        </header>
+
+        <div class="why-grid">
+          <article class="why-item fade-in">
+            <h3>Data Precision</h3>
+            <p>We instrument your systems so decisions are grounded in clean, reliable data instead of guesswork.</p>
+          </article>
+
+          <article class="why-item fade-in delay-1">
+            <h3>Strategic Thinking</h3>
+            <p>Every execution move ties back to a clear growth thesis, not just aesthetics or trends.</p>
+          </article>
+
+          <article class="why-item fade-in delay-2">
+            <h3>Systems-First Approach</h3>
+            <p>We design interconnected workflows, not one-off assets—so each new initiative strengthens the whole.</p>
+          </article>
+
+          <article class="why-item fade-in delay-3">
+            <h3>Long-Term Growth Mindset</h3>
+            <p>We care about enduring outcomes, compounding effects, and building capabilities inside your team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-copy fade-in">
+          <h2 id="contact-title">Start a Serious Conversation.</h2>
+          <p>
+            Tell us where you are, where you want to go, and we’ll respond with how Beserious can help engineer that trajectory.
+          </p>
+          <ul class="contact-points">
+            <li>Focused on early-stage and growth-stage teams.</li>
+            <li>Limited active partner slots to protect depth of work.</li>
+            <li>We reply to most inquiries within 24–48 hours.</li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrapper fade-in delay-1">
+          <!--
+            FORM ACTION (Formspree):
+            1. Replace the URL below with your own Formspree endpoint.
+            2. Example: action="https://formspree.io/f/abcdwxyz"
+            3. Ensure the 'method' stays as POST.
+          -->
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required placeholder="Your name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@company.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" placeholder="Your company or project name">
+              </div>
+              <div class="field">
+                <label for="projectType">Project Type</label>
+                <select id="projectType" name="project_type" required>
+                  <option value="">Select a project type</option>
+                  <option>Website Design &amp; Development</option>
+                  <option>App Design &amp; Development</option>
+                  <option>AI Integration &amp; Automation</option>
+                  <option>Digital Marketing</option>
+                  <option>Graphic Design</option>
+                  <option>SEO Optimization</option>
+                  <option>Multiple / Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field full">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget" required>
+                  <option value="">Choose an estimated range</option>
+                  <option>₹25k–₹50k</option>
+                  <option>₹50k–₹1L</option>
+                  <option>₹1L+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field full">
+                <label for="message">Project Details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Share context, timelines, and what growth looks like for you."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Formspree requires a success action; we also handle UI state via JS -->
+            <button type="submit" class="btn btn-primary btn-full">
+              Submit Inquiry
+            </button>
+
+            <p class="form-footnote">
+              By submitting, you agree to be contacted about this inquiry. No spam, ever.
+            </p>
+
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+
+          <!--
+            Optional EmailJS integration (if you prefer, instead of Formspree):
+
+            1. Sign up at https://www.emailjs.com/ and create a service + template.
+            2. Add the EmailJS SDK before the closing </body> tag or bundle it in script.js:
+               <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+            3. In script.js, uncomment and fill in:
+               emailjs.init('YOUR_PUBLIC_KEY'); // <-- paste your EmailJS public key here
+               emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams);
+            4. In that case, you can remove or ignore the Formspree 'action' attribute
+               and let JS handle the submission.
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Beserious</span>
+        <span class="footer-tagline">Be Serious About Growth.</span>
+      </div>
+
+      <div class="footer-social">
+        <!-- Replace href values with your real profiles when ready -->
+        <a href="#" aria-label="Beserious on LinkedIn" class="social-icon">
+          <span>in</span>
+        </a>
+        <a href="#" aria-label="Beserious on Twitter/X" class="social-icon">
+          <span>𝕏</span>
+        </a>
+        <a href="#" aria-label="Beserious on Instagram" class="social-icon">
+          <span>◎</span>
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> Beserious. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
