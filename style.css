@@ -126,6 +126,12 @@ p {
   text-decoration: none;
 }
 
+.brand-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
 .brand-icon {
   width: 34px;
   height: 34px;
@@ -960,4 +966,5 @@ textarea {
   .hero-card {
     padding: 20px 18px 16px;
   }
+
 }
